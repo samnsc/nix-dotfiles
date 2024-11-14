@@ -12,6 +12,7 @@
     raycast
     wireshark
     zoxide
+    google-chrome
     ice-bar
     # arc-browser
     # gitbutler
