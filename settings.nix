@@ -16,7 +16,7 @@
     persistent-apps = [
       "/System/Applications/Messages.app"
       "/Applications/WhatsApp.app"
-      "${pkgs.arc-browser}/Applications/Arc.app"
+      "/Applications/Arc.app"
       "${pkgs.iterm2}/Applications/iTerm2.app"
       "/Applications/GitButler.app"
       "${pkgs.zed-editor}/Applications/Zed.app"

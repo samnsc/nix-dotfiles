@@ -7,13 +7,13 @@
     neovim
     nixpkgs-fmt
     zed-editor
-    arc-browser
     iterm2
     bat
     raycast
     wireshark
     zoxide
     ice-bar
+    # arc-browser
     # gitbutler
     # whatsapp-for-mac
   ];
@@ -56,8 +56,10 @@
       extraConfig = {
         commit.gpgsign = true;
         gpg.format = "ssh";
-        gpg."ssh".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
-        user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJuerlNiBsef84YqeNO4KpaS/rO+6bqYAbl+2TSx51en";
+        gpg."ssh".program =
+          "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+        user.signingkey =
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJuerlNiBsef84YqeNO4KpaS/rO+6bqYAbl+2TSx51en";
       };
     };
     starship = { enable = true; };
