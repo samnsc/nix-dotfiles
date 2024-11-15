@@ -1,8 +1,6 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./config.nix ];
-
   home.packages = with pkgs; [
     neovim
     nixpkgs-fmt
@@ -18,6 +16,8 @@
     # gitbutler
     # whatsapp-for-mac
   ];
+
+  home.file = { "iterm2" = import ./iterm2/configuration.nix; };
 
   programs = {
     home-manager.enable = true;

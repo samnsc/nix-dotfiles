@@ -14,9 +14,11 @@
     showhidden = true;
 
     persistent-apps = [
+      "/Applications/Arc.app"
+      "/System/Applications/iPhone Mirroring.app"
       "/System/Applications/Messages.app"
       "/Applications/WhatsApp.app"
-      "/Applications/Arc.app"
+      "/System/Applications/Music.app"
       "${pkgs.iterm2}/Applications/iTerm2.app"
       "/Applications/GitButler.app"
       "${pkgs.zed-editor}/Applications/Zed.app"
@@ -35,5 +37,11 @@
   system.defaults.CustomUserPreferences = {
     NSGlobalDomain = { AppleAccentColor = 5; };
     "com.apple.Siri" = { StatusMenuVisible = 0; };
+    "com.apple.music" = {
+      losslessEnabled = 1;
+      preferredDownloadAudioQuality = 20;
+      preferredStreamPlaybackAudioQuality = 20;
+      crossfadeEnabled = 1;
+    };
   };
 }
