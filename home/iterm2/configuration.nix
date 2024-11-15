@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  source = ./iterm2/com.googlecode.iterm2.plist;
+  source = ./com.googlecode.iterm2.plist;
   target = "./Library/Preferences/homemanager.com.googlecode.iterm2.plist";
   onChange = ''
     rm -f ./Library/Preferences/com.googlecode.iterm2.plist
