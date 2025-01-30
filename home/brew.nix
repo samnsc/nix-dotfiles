@@ -3,15 +3,15 @@
 {
   homebrew = {
     enable = true;
+    # move gitbutler and whatsapp to nix package once they aren't broken
     casks =
-      [ # move gitbutler and whatsapp to nix package once they aren't broken
+      [
         "1password"
         "little-snitch"
         "gitbutler"
         "whatsapp"
-        "setapp"
+        "ghostty"
         "arc"
-        "firefox"
       ];
     masApps = { # adds mas to brews
       Xcode = 497799835;

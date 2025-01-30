@@ -2,22 +2,18 @@
 
 {
   home.packages = with pkgs; [
-    neovim
-    nixpkgs-fmt
-    zed-editor
-    iterm2
-    bat
-    raycast
-    wireshark
-    zoxide
-    google-chrome
-    ice-bar
-    # arc-browser
-    # gitbutler
-    # whatsapp-for-mac
-  ];
+    # nix language servers and formatters
+    nil
+    nixd
+    nixfmt-classic
 
-  home.file = { "iterm2" = import ./iterm2/configuration.nix; };
+    neovim
+
+    bat
+    zoxide
+
+    raycast
+  ];
 
   programs = {
     home-manager.enable = true;
@@ -26,6 +22,7 @@
       nix-direnv.enable = true;
       config = { hide_env_diff = true; };
     };
+    zed-editor = import ./zed.nix;
     vscode = {
       enable = true;
       enableUpdateCheck = false;
