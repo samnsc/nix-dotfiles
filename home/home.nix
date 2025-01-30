@@ -15,6 +15,8 @@
     raycast
   ];
 
+  imports = [ ./ghostty.nix ];
+
   programs = {
     home-manager.enable = true;
     direnv = {
